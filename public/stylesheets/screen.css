@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "League Gothic";
+  src: url('/fonts/LeagueGothic.otf');
+}
+@font-face {
+  font-family: Prociono;
+  src: url('/fonts/ProcionoTT.ttf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "League Gothic";
+}
+p {
+  font-family: Prociono;
+}
 #header {
   border-bottom: 1px solid #000;
   margin-bottom: 10px;
