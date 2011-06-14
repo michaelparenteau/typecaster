@@ -1,23 +1,25 @@
-var Typecaster = {
-  dropdownSelector: "#font-selector select",
-
-  init: function() {
-    $(Typecaster.dropdownSelector).change(function() { Typecaster.update(); });
-    Typecaster.update();
-  },
+var Typecaster = function($){
+  var $dropdown = $("#font-selector select");
   
-  getFont: function() {
-    return $(Typecaster.dropdownSelector).val();
-  },
+  return {
+    init: function() {
+      $dropdown.change(function() { Typecaster.update(); });
+      Typecaster.update();
+    },
   
-  setFont: function(font) {
-    $("body").css("font-family", font);
-  },
+    getFont: function() {
+      return $dropdown.val();
+    },
   
-  update: function() {
-    Typecaster.setFont(Typecaster.getFont());
-  }
-}
+    setFont: function(font) {
+      $("body").css("font-family", font);
+    },
+  
+    update: function() {
+      Typecaster.setFont(Typecaster.getFont());
+    }
+  };
+}(jQuery);
 
 $(function() {
   Typecaster.init();
