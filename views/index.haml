@@ -1,4 +1,12 @@
 .container
+  %form{:id => "font-selector"}
+    %select
+      %option{:value => "bello-pro-1,bello-pro-2"} Bello Pro
+      %option{:value => "corner-store-1,corner-store-2"} Corner Store
+      %option{:value => "League Gothic"} League Gothic
+      %option{:value => "olidia-1,olidia-2"} Olidia
+      %option{:value => "Prociono"} Prociono
+
   #header
     %h1 Typecaster
   .ten.columns.alpha
@@ -22,6 +30,7 @@
     %h4 An H4 Header
     %h5 An H5 Header
     %h6 An H6 Header
+    
   .five.columns.offset-by-one.omega
     %h2 Sidebar Heading
     %p 

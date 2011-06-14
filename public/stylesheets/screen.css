@@ -7,17 +7,14 @@
   src: url('/fonts/ProcionoTT.ttf');
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "League Gothic";
-}
-
-h1 { font-family: "bello-pro-1", "bello-pro-2"; }
+body { font-family: "bello-pro-1", "bello-pro-2"; }
+/*
+/*body { font-family: "League Gothic"; }
 h2 { font-family: "corner-store-1", "corner-store-2"; }
 h3 { font-family: "olidia-1", "olidia-2"; }
+p { font-family: Prociono; }
+*/
 
-p {
-  font-family: Prociono;
-}
 #header {
   border-bottom: 1px solid #000;
   margin-bottom: 10px;

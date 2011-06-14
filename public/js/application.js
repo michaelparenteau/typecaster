@@ -1,6 +1,5 @@
-// functions here
-
-// document resady run functions
-$(document).ready(function() {
-  
+$(function() {
+  $("#font-selector select").change(function() {
+    $("body").css("font-family", $(this).val());
+  });
 });
