@@ -229,8 +229,6 @@ ul.tabs {
 /* #Forms
 ================================================== */
 
-form { 
-	margin-bottom: 20px; }
 fieldset { 
 	margin-bottom: 20px; }
 input[type="text"], 
@@ -250,7 +248,6 @@ select {
 	width: 210px;
 	max-width: 100%;
 	display: block;
-	margin-bottom: 20px;
 	background: #fff; }
 select { 
 	padding: 0; }

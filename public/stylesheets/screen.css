@@ -12,6 +12,22 @@
   margin-bottom: 10px;
   padding: 10px 0 0 0;
 }
+.toolbar {
+  padding: 15px;
+  -webkit-box-shadow: 0 1px 2px 0 #999;
+  background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(.5, #ccc),
+      color-stop(1, #ebebeb)
+  );
+  border-bottom: 1px solid #fff;
+}
+.toolbar select {
+  -webkit-box-shadow: 0 0 3px 0 #333;
+  display: block;
+}
 /* iPad Portrait/Browser */
 @media only screen and (min-width: 768px) and (max-width: 991px) {}
 
