@@ -1,18 +1,23 @@
 var Typecaster = function($){
-  var $dropdown = $("#font-selector select");
+  var $fontLinks = $("#font-selector a");
   
   return {
     init: function() {
-      $dropdown.change(function() { Typecaster.update(); });
+      $fontLinks.click(function() { 
+        $fontLinks.removeClass("active");
+        $(this).addClass("active");
+        Typecaster.update(); 
+      });
+      
       Typecaster.update();
     },
   
     getFont: function() {
-      return $dropdown.val();
+      return $("#font-selector a.active").attr("data-value");
     },
   
     setFont: function(font) {
-      $("body").css("font-family", font);
+      $("#document").css("font-family", font);
     },
   
     update: function() {
