@@ -1,13 +1,13 @@
 .toolbar
   .container
-    %form{:id => "font-selector"}
-      %select
-        %option{:value => "Prociono"} Prociono
-        %option{:value => "bello-pro-1,bello-pro-2"} Bello Pro
-        %option{:value => "corner-store-1,corner-store-2"} Corner Store
-        %option{:value => "League Gothic"} League Gothic
-        %option{:value => "olidia-1,olidia-2"} Olidia
-.container
+    #font-selector
+      %a.active{:'data-value' => "Prociono"} Prociono
+      %a{:'data-value' => "bello-pro-1,bello-pro-2"} Bello Pro
+      %a{:'data-value' => "corner-store-1,corner-store-2"} Corner Store
+      %a{:'data-value' => "League Gothic"} League Gothic
+      %a{:'data-value' => "olidia-1,olidia-2"} Olidia
+
+#document.container
   #header
     %h1 Typecaster
   .ten.columns.alpha
@@ -31,7 +31,7 @@
     %h4 An H4 Header
     %h5 An H5 Header
     %h6 An H6 Header
-    
+  
   .five.columns.offset-by-one.omega
     %h2 Sidebar Heading
     %p 
